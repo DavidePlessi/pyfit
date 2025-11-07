@@ -1,6 +1,6 @@
-# 🏋️‍♂️ FitTrack
+# 🏋️‍♂️ PyFit
 
-**FitTrack** is a full-stack web app to manage and log workouts — built with  
+**PyFit** is a full-stack web app to manage and log workouts — built with  
 **FastAPI + MongoDB (Beanie)** on the backend and **Vue 3 (Vite)** on the frontend.
 
 ---
@@ -26,7 +26,7 @@
 ## 🗂️ Project Structure
 
 ```
-fittrack/
+PyFit/
 │
 ├── backend/
 │   ├── app/
@@ -37,7 +37,7 @@ fittrack/
 │   │   └── main.py      # app entrypoint
 │   └── Dockerfile
 │
-└── fittrack-web/        # Vue 3 frontend
+└── web/        # Vue 3 frontend
 ```
 
 ---
@@ -46,8 +46,8 @@ fittrack/
 
 ### 1️⃣ Clone & enter
 ```bash
-git clone https://github.com/DavidePlessi/fittrack.git
-cd fittrack
+git clone https://github.com/DavidePlessi/pyfit.git
+cd pyfit
 ```
 
 ### 2️⃣ Run backend (Docker)
@@ -63,7 +63,7 @@ Docs available at:
 
 ### 3️⃣ Run frontend
 ```bash
-cd fittrack-web
+cd pyfit-web
 npm install
 npm run dev
 ```
@@ -114,7 +114,7 @@ Each circuit defines multiple **PlanExercises**, each having:
 | Key | Default | Description |
 |-----|----------|-------------|
 | `MONGO_URI` | `mongodb://localhost:27017` | Mongo connection URI |
-| `MONGO_DB` | `fittrack` | Database name |
+| `MONGO_DB` | `pyfit` | Database name |
 | `JWT_SECRET` | `dev-secret-change-me` | Secret key for tokens |
 | `ACCESS_TOKEN_EXPIRE_MINUTES` | `1440` | JWT lifetime |
 
@@ -127,7 +127,7 @@ Each circuit defines multiple **PlanExercises**, each having:
 docker compose -f docker-compose.yml up --build -d
 
 # Frontend (build)
-cd fittrack-web
+cd pyfit-web
 npm run build
 ```
 
