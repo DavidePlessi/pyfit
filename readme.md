@@ -46,7 +46,7 @@ fittrack/
 
 ### 1️⃣ Clone & enter
 ```bash
-git clone https://github.com/<yourname>/fittrack.git
+git clone https://github.com/DavidePlessi/fittrack.git
 cd fittrack
 ```
 
@@ -137,12 +137,10 @@ You can serve the `dist/` folder via Nginx or similar.
 
 ## 🧾 License
 
-MIT © [Your Name]
+MIT © Davide Plessi
 
 ---
 
 ### ✅ Next Steps
 - [ ] Add CRUD for exercises + seed data  
 - [ ] Add “actual performance” tracking for workouts  
-- [ ] Deploy on Fly.io / Render with Mongo Atlas  
-- [ ] Implement mobile-friendly UI
